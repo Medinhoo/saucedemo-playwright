@@ -8,30 +8,29 @@ export default class CheckoutCompletePage {
         this.page = page
     }
 
-    // Locators 
-    private titleCheckoutComplete= () => this.page.getByText('Checkout: Complete!');
-    private containerCheckoutComplete= () => this.page.locator('[data-test="checkout-complete-container"]');
-    private greatingMessage = () => this.page.locator('[data-test="complete-header"]');
-    private backToProductsButton = () => this.page.locator('[data-test="back-to-products"]');
+    // Locators
+    private titleCheckoutComplete = () => this.page.getByText('Checkout: Complete!');  // Locator for the page title
+    private containerCheckoutComplete = () => this.page.locator('[data-test="checkout-complete-container"]');  // Locator for the main container
+    private greetingMessage = () => this.page.locator('[data-test="complete-header"]');  // Locator for the completion message
+    private backToProductsButton = () => this.page.locator('[data-test="back-to-products"]');  // Locator for the button to return to products
 
     // Actions
+
+    // Check if the checkout complete page is displayed
     public async isCheckoutCompletePageDisplayed() {
         await this.page.waitForURL('https://www.saucedemo.com/checkout-complete.html');
         await expect(this.titleCheckoutComplete()).toBeVisible();    
         await expect(this.containerCheckoutComplete()).toBeVisible();    
     }
 
+    // Verify that the order completion message is correct
     public async isOrderComplete() {
-        const mess = await this.greatingMessage().textContent()   
-        expect(mess).toEqual('Thank you for your order!')
+        const message = await this.greetingMessage().textContent();   
+        expect(message).toEqual('Thank you for your order!');
     }
 
+    // Click the button to return to the products page
     public async backToHome() {
-        await this.backToProductsButton().click()
+        await this.backToProductsButton().click();
     }
-
-
-
-    
-    
-}   
+}

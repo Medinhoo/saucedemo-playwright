@@ -1,0 +1,8 @@
+Description of Bugs
+
+Bug 1: Cannot Add or Remove Products Users "problem_user" and "error_user" cannot add the "sauce-labs-bolt-t-shirt" to their cart or remove items after adding them.
+Bug 2: Limited Add to Cart Users "error" and "problem" can only add 3 out of 6 products.
+Bug 3: Sorting Issues Sorting functionality is incorrect for users "visual", "error", and "problem".
+Bug 4: Performance Issues Navigating from product pages is slow.
+Bug 5: Cannot Enter Last Name "problem_user" cannot input their last name.
+Bug 6: Missing Required Field "error_user" can proceed without entering their last name.
