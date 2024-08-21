@@ -1,8 +1,31 @@
-Description of Bugs
+Bug Report: Issues Found During Testing
 
-Bug 1: Cannot Add or Remove Products Users "problem_user" and "error_user" cannot add the "sauce-labs-bolt-t-shirt" to their cart or remove items after adding them.
-Bug 2: Limited Add to Cart Users "error" and "problem" can only add 3 out of 6 products.
-Bug 3: Sorting Issues Sorting functionality is incorrect for users "visual", "error", and "problem".
-Bug 4: Performance Issues Navigating from product pages is slow.
-Bug 5: Cannot Enter Last Name "problem_user" cannot input their last name.
-Bug 6: Missing Required Field "error_user" can proceed without entering their last name.
+    Problem User and Error User:
+
+    Unable to add the product sauce-labs-bolt-t-shirt to their cart.
+    Unable to remove a product after it has been added.
+    Can only add 3 out of 6 products to their cart.
+    Problem_user does not navigate to the correct product page when clicking on the product title.
+
+
+    Visual User:
+
+    Displays incorrect price for products on the products page.
+    Sorting functionality is broken.
+
+
+    Performance Glitch User:
+
+    Excessive delay when returning to the products page from other pages.
+
+
+    Checkout Issues:
+
+    All users can finalize an order without any items in their cart.
+    Problem_user cannot enter their lastname during checkout.
+    Error_user can proceed to checkout overview without entering their lastname.
+
+
+    Visual Comparison Issues:
+
+    Visual_user, Problem_user, and Error_user display incorrect elements on the site (see visual-comparison file).
