@@ -135,7 +135,6 @@ test.describe("Visual assertion and comparison of the saucedemo website", () => 
             const cartPage = new CartPage(page);
             const checkoutInfoPage = new CheckoutInfoPage(page);
             const checkoutOverviewPage = new CheckoutOverviewPage(page);
-            const checkoutCompletePage = new CheckoutCompletePage(page);
       
             // Log in
             await loginPage.goto();
